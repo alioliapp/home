@@ -1,46 +1,337 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alioli - Home</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1">
+<title>Alioli</title>
+<link rel="icon" href="favicon.png" type="image/png">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css"> 
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css"> 
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+ 
+<!--[if lt IE 9]>
+    <script src="js/respond-1.1.0.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/html5element.js"></script>
+<![endif]-->
+ 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Alioli</a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="delete-account.html">Delete Account</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
 
-    <div class="container mt-5">
-        <h1>Welcome to Alioli</h1>
-        <p>This application is designed to [description of the application].</p>
+<!--Header_section-->
+<header id="header_wrapper">
+  <div class="container">
+    <div class="header_box">
+      <div class="logo"><a href="#"><img src="img/logo.png" alt="logo"></a></div>
+	  <nav class="navbar navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        </div>
+	    <div id="main-nav" class="collapse navbar-collapse navStyle">
+			<ul class="nav navbar-nav" id="mainNav">
+			  <li class="active"><a href="#hero_section" class="scroll-link">Aplicación</a></li>
+			  <li><a href="#service" class="scroll-link">Funciones</a></li>
+			  <li><a href="#Portfolio" class="scroll-link">Capturas</a></li>
+			  <li><a href="#contact" class="scroll-link">Información</a></li>
+			</ul>
+      </div>
+	 </nav>
     </div>
+  </div>
+</header>
+<!--Header_section--> 
 
-    <footer class="footer bg-dark text-white mt-auto py-3">
-        <div class="container text-center">
-            <nav>
-                <a href="delete-account.html" class="text-white">Delete Account</a> | 
-                <a href="privacy-policy.html" class="text-white">Privacy Policy</a>
-            </nav>
+<!--Hero_Section-->
+<section id="hero_section" class="top_cont_outer">
+  <div class="hero_wrapper">
+    <div class="container">
+      <div class="hero_section">
+        <div class="row">
+          <div class="col-lg-5 col-sm-7">
+            <div class="top_left_cont zoomIn wow animated"> 
+              <h2>La <strong>única</strong> aplicación de <strong>alimentación</strong> que necesitas</h2>
+              <p>Alioli es una aplicación que centraliza multitud de funcionalidades sobre alimentación en un solo lugar.</p>
+              <a href="#service" class="read_more2">Leer más</a> </div>
+          </div>
+          <div class="col-lg-7 col-sm-5">
+			<img src="img/main_device_image.png" class="zoomIn wow animated" alt="" />
+		  </div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Hero_Section--> 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!--Funciones-->
+<section id="service">
+  <div class="container">
+    <h2>Funciones</h2>
+    <div class="service_wrapper">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="service_block">
+            <div class="service_icon delay-03s animated wow zoomIn"> <span><i class="fa fa-shopping-cart"></i></span> </div>
+            <h3 class="animated fadeInUp wow">Gestión de alimentos</h3>
+            <p class="animated fadeInDown wow">Crea listas de alimentos disponibles en tu despensa y lista de la compra.</p>
+            <br>
+          </div>
+        </div>
+        <div class="col-lg-4 borderLeft">			
+          <div class="service_block">
+            <div class="service_icon icon2 delay-03s animated wow zoomIn"> <span><i class="fa fa-clock-o"></i></span> </div>
+            <h3 class="animated fadeInUp wow">Caducidad</h3>
+            <p class="animated fadeInDown wow">Recibe notificaciones personalizables cuando un alimento de tu despensa esté próximo a su fecha de caducidad.</p>
+            <br>
+          </div>
+        </div>
+        <div class="col-lg-4 borderLeft">
+          <div class="service_block">
+            <div class="service_icon icon3 delay-03s animated wow zoomIn"> <span><i class="fa fa-barcode"></i></span> </div>
+            <h3 class="animated fadeInUp wow">Escaner</h3>
+            <p class="animated fadeInDown wow">Escanea el código de barras de cualquier alimento y te ofrece un resumen y valoración de su información nutricional.</p>
+            <br>
+          </div>
+        </div>
+      </div>
+	   <div class="row borderTop">
+        <div class="col-lg-4 mrgTop">
+          <div class="service_block">
+            <div class="service_icon delay-03s animated wow zoomIn"> <span><i class="fa fa-book"></i></span> </div>
+            <h3 class="animated fadeInUp wow">Recetas</h3>
+            <p class="animated fadeInDown wow">Alioli cuenta con una base de recetas creadas por una comunidad de usuarios entre las que podrás navegar e interactuar, creando listas de recetas, dando me gustas o subiendo tus propias recetas.</p>
+            <br>
+          </div>
+        </div>
+        <div class="col-lg-4 borderLeft mrgTop">
+          <div class="service_block">
+            <div class="service_icon icon2 delay-03s animated wow zoomIn"> <span><i class="fa fa-search"></i></span> </div>
+            <h3 class="animated fadeInUp wow">Búsqueda</h3>
+            <p class="animated fadeInDown wow">Busca recetas en función de los ingredientes de tu despensa y encuentra justo la receta que necesitas.</p>
+            <br>
+          </div>
+        </div>
+        <div class="col-lg-4 borderLeft mrgTop">
+          <div class="service_block">
+            <div class="service_icon icon3 delay-03s animated wow zoomIn"> <span><i class="fa fa-filter"></i></span> </div>
+            <h3 class="animated fadeInUp wow">Filtros</h3>
+            <p class="animated fadeInDown wow">Alioli ofrece una búsqueda personalizable con multitud de parámetros, filtros o categorías, permitiendo encontrar recetas bajo estrictos criterios.</p>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Funciones-->
+
+
+
+
+<!-- Screenshots -->
+<section id="Portfolio" class="content"> 
+  
+  <!-- Container -->
+  <div class="container portfolio_title"> 
+    
+    <!-- Title -->
+    <div class="section-title">
+      <h2>Capturas</h2>
+    </div>
+    <!--/Title --> 
+    
+  </div>
+  <!-- Container -->
+  
+  <div class="portfolio-top"></div>
+  
+  <!-- Screenshots Filters -->
+  <div class="portfolio"> 
+    
+    <div id="filters" class="sixteen columns">
+      <ul class="clearfix">
+        <li><a id="all" href="#" data-filter="*" class="active">
+          <h5>Todas</h5>
+          </a></li>
+        <li><a class="" href="#" data-filter=".nutri">
+          <h5>Nutrición</h5>
+          </a></li>
+        <li><a class="" href="#" data-filter=".recipes">
+          <h5>Recetas</h5>
+          </a></li>
+        <li><a class="" href="#" data-filter=".list">
+          <h5>Listas</h5>
+          </a></li>
+      </ul>
+    </div>
+    <!--/Screenshots Filters --> 
+    
+    <!-- Screenshots Wrapper -->
+    <div class="isotope fadeInLeft animated wow" style="position: relative; overflow: hidden; height: 480px;" id="portfolio_wrapper"> 
+      
+      <!-- Screenshots Item -->
+      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   appleIOS isotope-item">
+        <div class="portfolio_img"> <img src="img/portfolio_pic1.png"  alt="Portfolio 1"> </div>        
+        <div class="item_overlay">
+          <div class="item_info"> 
+            <h4 class="project_name">Lista de despensa</h4>
+          </div>
+        </div>
+        </div>
+      <!--/Screenshots Item --> 
+      
+      <!-- Screenshots Item-->
+      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  nutri isotope-item">
+        <div class="portfolio_img"> <img src="img/portfolio_pic2.png" alt="Portfolio 1"> </div>
+        <div class="item_overlay">
+          <div class="item_info"> 
+            <h4 class="project_name">Modo de escaneo</h4>
+          </div>
+        </div>
+      </div>
+      <!--/Screenshots Item --> 
+      
+      <!-- Screenshots Item -->
+      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  nutri  isotope-item">
+        <div class="portfolio_img"> <img src="img/portfolio_pic3.png" alt="Portfolio 1"> </div>
+        <div class="item_overlay">
+          <div class="item_info"> 
+            <h4 class="project_name">Evaluación nutricional</h4>
+          </div>
+        </div>
+      </div>
+      <!--/Screenshots Item--> 
+      
+      <!-- Screenshots Item-->
+      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  recipes isotope-item">
+        <div class="portfolio_img"> <img src="img/portfolio_pic4.png" alt="Portfolio 1"> </div>
+        <div class="item_overlay">
+          <div class="item_info"> 
+            <h4 class="project_name">Resultados de búsqueda</h4>
+          </div>
+        </div>
+      </div>
+      <!-- Screenshots Item --> 
+      
+      <!-- Screenshots Item -->
+      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  recipes isotope-item">
+        <div class="portfolio_img"> <img src="img/portfolio_pic5.png" alt="Portfolio 1"> </div>
+        <div class="item_overlay">
+          <div class="item_info"> 
+            <h4 class="project_name">Búsqueda por ingredientes</h4>
+          </div>
+        </div>
+      </div>
+      <!--/Screenshots Item --> 
+      
+      <!-- Screenshots Item -->
+      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  recipes isotope-item">
+        <div class="portfolio_img"> <img src="img/portfolio_pic6.png" alt="Portfolio 1"> </div>
+        <div class="item_overlay">
+          <div class="item_info"> 
+            <h4 class="project_name">Visualización de recetas</h4>
+          </div>
+        </div>
+      </div>
+      <!--/Screenshots Item --> 
+      
+      <!-- Screenshots Item  -->
+      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four list isotope-item">
+        <div class="portfolio_img"> <img src="img/portfolio_pic7.png" alt="Portfolio 1"> </div>       
+        <div class="item_overlay">
+          <div class="item_info"> 
+            <h4 class="project_name">Guardar recetas en listas</h4>
+          </div>
+        </div>
+       </div>
+      <!--/Screenshots Item --> 
+      
+      <!-- Screenshots Item -->
+      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   list isotope-item">
+        <div class="portfolio_img"> <img src="img/portfolio_pic8.png" alt="Portfolio 1"> </div>       
+        <div class="item_overlay">
+          <div class="item_info"> 
+				<h4 class="project_name">Listas de recetas</h4>
+          </div>
+        </div>
+        </a> </div>
+      <!--/Screenshots Item --> 
+      
+    </div>
+    <!--/Screenshots Wrapper --> 
+    
+  </div>
+  <!--/Screenshots Filters -->
+  
+  <div class="portfolio_btm"></div>
+  
+  
+  <div id="project_container">
+    <div class="clear"></div>
+    <div id="project_data"></div>
+  </div>
+ 
+  
+</section>
+<!--/Screenshots --> 
+
+<!--Footer-->
+<footer class="footer_wrapper" id="contact">
+  <div class="container">
+    <section class="page_section contact" id="contact">
+      <div class="contact_section">
+        <h2>Información de Contacto</h2>
+        <div class="row">
+          <div class="col-lg-4">
+            
+          </div>
+          <div class="col-lg-4">
+           
+          </div>
+          <div class="col-lg-4">
+          
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 wow fadeInLeft">
+          <div class="contact_info">
+            <div class="detail">
+              <h4>Email</h4>
+              <p>aliolifoodapp@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 wow fadeInLeft delay-06s">
+          <div class="links">
+            <ul>
+              <li><a href="terms.html">Términos y condiciones</a></li>
+              <li><a href="privacy.html">Política de privacidad</a></li>
+              <li><a href="delete_account.html">Eliminar mi cuenta</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="container">
+    <div class="footer_bottom"><span>Copyright © 2024</span> </div>
+  </div>
+</footer>
+
+
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+<script type="text/javascript" src="js/jquery.nav.js"></script> 
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script type="text/javascript" src="js/wow.js"></script> 
+<script type="text/javascript" src="js/custom.js"></script>
+
+</body>
+</html>oter>
 </body>
 </html>
